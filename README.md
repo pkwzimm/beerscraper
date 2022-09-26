@@ -5,10 +5,10 @@ This is a scraper that will loop over every brewery address in Untappd sequentia
 
 ### Instructions
 #### Order of scripts:
-- untappd-scraper.py \
-Scrapes Untappd
-- filter_breweries.py \
-Filters the output file from above by geographic location, average rating, and total rating.
+1. untappd-scraper.py \
+Scrapes Untappd, outputs untappd.csv
+2. filter_breweries.py \
+Filters the output file from above by geographic location, average rating, and total rating, outputs untappd_db.csv
 
 #### Dashboard files:
 - index.html \
