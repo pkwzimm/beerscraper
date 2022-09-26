@@ -17,4 +17,4 @@ Filters the output file from above by geographic location, average rating, and t
 - jquery.3.5.1.min.js
 All used to host the dashboard
 
-Important Note - You'll need to host the web and data files on a webserver for this to work.  Right now, they expect everything to be in the root directory.
+**Important Note** - You'll need to host the web and data files on a webserver for this to work.  Right now, they expect everything to be in the root directory.
