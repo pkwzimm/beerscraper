@@ -6,7 +6,7 @@ This is a scraper that will loop over every brewery address in Untappd sequentia
 ### Instructions
 #### Order of scripts:
 1. untappd-scraper.py \
-Scrapes Untappd, outputs untappd.csv
+Scrapes Untappd, outputs untappd.csv **NOTE**: this can take awhile, since it has to wait for the server to respond to ~500k individual pages, if you're scraping the whole thing.
 2. filter_breweries.py \
 Filters the output file from above by geographic location, average rating, and total rating, outputs untappd_db.csv
 
@@ -17,7 +17,5 @@ page on which to embed the dashboard
 D3.js script
 - brewery.css \
 styling
-- jquery.3.5.1.min.js \
-D3 needs jQuery
 
 **Important Note** - You'll need to host the web and data files on a webserver for this to work.  Right now, they expect everything to be in the root directory.
