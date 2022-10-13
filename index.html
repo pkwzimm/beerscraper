@@ -30,16 +30,9 @@
  <script type="text/javascript">function setREVStartSize(t){try{var h,e=document.getElementById(t.c).parentNode.offsetWidth;if(e=0===e||isNaN(e)?window.innerWidth:e,t.tabw=void 0===t.tabw?0:parseInt(t.tabw),t.thumbw=void 0===t.thumbw?0:parseInt(t.thumbw),t.tabh=void 0===t.tabh?0:parseInt(t.tabh),t.thumbh=void 0===t.thumbh?0:parseInt(t.thumbh),t.tabhide=void 0===t.tabhide?0:parseInt(t.tabhide),t.thumbhide=void 0===t.thumbhide?0:parseInt(t.thumbhide),t.mh=void 0===t.mh||""==t.mh||"auto"===t.mh?0:parseInt(t.mh,0),"fullscreen"===t.layout||"fullscreen"===t.l)h=Math.max(t.mh,window.innerHeight);else{for(var i in t.gw=Array.isArray(t.gw)?t.gw:[t.gw],t.rl)void 0!==t.gw[i]&&0!==t.gw[i]||(t.gw[i]=t.gw[i-1]);for(var i in t.gh=void 0===t.el||""===t.el||Array.isArray(t.el)&&0==t.el.length?t.gh:t.el,t.gh=Array.isArray(t.gh)?t.gh:[t.gh],t.rl)void 0!==t.gh[i]&&0!==t.gh[i]||(t.gh[i]=t.gh[i-1]);var r,a=new Array(t.rl.length),n=0;for(var i in t.tabw=t.tabhide>=e?0:t.tabw,t.thumbw=t.thumbhide>=e?0:t.thumbw,t.tabh=t.tabhide>=e?0:t.tabh,t.thumbh=t.thumbhide>=e?0:t.thumbh,t.rl)a[i]=t.rl[i]<window.innerWidth?0:t.rl[i];for(var i in r=a[0],a)r>a[i]&&0<a[i]&&(r=a[i],n=i);var d=e>t.gw[n]+t.tabw+t.thumbw?1:(e-(t.tabw+t.thumbw))/t.gw[n];h=t.gh[n]*d+(t.tabh+t.thumbh)}void 0===window.rs_init_css&&(window.rs_init_css=document.head.appendChild(document.createElement("style"))),document.getElementById(t.c).height=h,window.rs_init_css.innerHTML+="#"+t.c+"_wrapper { height: "+h+"px }"}catch(t){console.log("Failure at Presize of Slider:"+t)}};</script>
   <style type="text/css" title="dynamic-css" class="options-output">body{font-family:Montserrat}.menu-item{font-family:Oswald}h1,h2,h3,h4,h5,h6{font-family:Oswald}body{color:#5c6873}h1{font-family:"Open Sans";text-transform:none;word-spacing:0;letter-spacing:0;font-weight:400;color:#3f444a;font-size:22px}h2{font-family:"Open Sans";text-transform:none;word-spacing:0;letter-spacing:0;font-weight:400;color:#3f444a;font-size:20px}h3{font-family:"Open Sans";text-transform:none;word-spacing:0;letter-spacing:0;font-weight:400;color:#3f444a;font-size:18px}h4{font-family:"Open Sans";text-transform:none;word-spacing:0;letter-spacing:0;font-weight:400;color:#3f444a;font-size:16px}h5{font-family:"Open Sans";text-transform:none;word-spacing:0;letter-spacing:0;font-weight:400;color:#3f444a;font-size:14px}h6{font-family:"Open Sans";text-transform:none;word-spacing:0;letter-spacing:0;font-weight:400;color:#3f444a;font-size:12px}</style><noscript><style>.wpb_animate_when_almost_visible{opacity:1}</style></noscript>
 
-<!--  <script src="https://d3js.org/d3.v5.min.js"></script>-->
-<!--  <script src="https://unpkg.com/topojson@3"></script>-->
-<!--  <script src="https://unpkg.com/d3-delaunay@4"></script>-->
-<!--  <script src="https://unpkg.com/d3-geo-voronoi@1"></script>-->
-
   <link href="brewery.css" rel="stylesheet">
     <script src="https://d3js.org/d3.v4.js"></script>
-    <!-- <script src="https://d3js.org/d3.v6.min.js"></script> -->
 
-<!--<script src="d3.min.js">></script>-->
 </head>
 
 <body>
@@ -127,7 +120,6 @@
 <!-- chart container -->
 <script type="text/javascript" src="/brewery/brewery.js"></script>
 <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
-<!--<script type="text/javascript" src="/koppen/map/color-stations.js"></script>-->
 
 </body>
 </html>

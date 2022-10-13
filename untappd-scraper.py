@@ -29,7 +29,7 @@ wait = WebDriverWait(browser, 0)
 df_filename = 'untappd.csv'
 df.to_csv(df_filename, index=False, quotechar='"', quoting=csv.QUOTE_ALL, header=True)
 
-for i in range(513760, 550000): # 530334 was the count as of 10/4/2022
+for i in range(1, 550000): # 530334 was the count as of 10/4/2022
     brewery_url = 'https://untappd.com/brewery/' + str(i)
 
     try:
@@ -71,5 +71,3 @@ for i in range(513760, 550000): # 530334 was the count as of 10/4/2022
     except:
         print("No brewery at " + brewery_url)
         pass
-
-
