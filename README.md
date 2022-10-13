@@ -18,4 +18,4 @@ D3.js script
 - brewery.css \
 styling
 
-**Important Note** - You'll need to host the web and data files on a webserver for this to work.  Right now, they expect everything to be in the root directory.
+**Important Note** - You'll need to host the web and data files on a webserver for this to work.  Right now, index.html expects everything else to be in the root directory (so if your uri is example.com/beer/, everything should be in /beer)

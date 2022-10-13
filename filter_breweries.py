@@ -5,7 +5,7 @@ query = ' United States' # PUT LOCATION YOU CARE ABOUT HERE - can be in the gene
 # query = 'Bend, OR' # PUT LOCATION YOU CARE ABOUT HERE - can be in the general form of 'Bend, OR UNITED STATES' or 'West Coast New Zealand'
 # query = ", WA UNITED STATES"
 
-df = pd.read_csv('untappd_raw.csv', dtype={'UT_Index':str,'average_rating':str,'num_ratings':str,'Brewery_Name':str,'UT_URL':str})
+df = pd.read_csv('untappd.csv', dtype={'UT_Index':str,'average_rating':str,'num_ratings':str,'Brewery_Name':str,'UT_URL':str})
 df = df.drop_duplicates(keep='first')
 df['average_rating'] = pd.to_numeric(df['average_rating'], errors='coerce')
 df = df[df['num_ratings'].notna()]
@@ -35,10 +35,7 @@ df['Brewery_Name_NS'] = df['Brewery_Name'].str.replace(' ', '_', case=False)
 df = df[['Brewery_Name','Brewery_Name_NS','City','State','average_rating','num_ratings','UT_URL']]
 df = df.drop_duplicates(subset='UT_URL', keep='first')
 
-# df_filename = 'untappd-Bend.csv'
-# df_filename = 'untappd-WA.csv'
 df_filename = 'untappd_db.csv'
-# df_filename = 'untappd_filter_results.csv'
 print("exporting " + df_filename)
 
 df.to_csv(df_filename, index=False, quotechar='"', quoting=csv.QUOTE_ALL, header=True)
